@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour
     bool isFollowing = true;
     PlayerController player;
     Camera cam;
+    
     void Start()
     {
         player = PlayerController.instance;

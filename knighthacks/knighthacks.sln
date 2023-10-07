@@ -5,16 +5,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Tim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline.Editor", "Unity.Timeline.Editor.csproj", "{86F99532-48BD-A653-DB4E-32DD5C9A410E}"
 EndProject
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Editor", "Unity.2D.Tilemap.Editor.csproj", "{8671ECDA-F2F7-37F1-E398-9D429D5B4661}"
 EndProject
+=======
+>>>>>>> Stashed changes
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.TextMeshPro.Editor", "Unity.TextMeshPro.Editor.csproj", "{588D9B21-0EA2-C8B8-BE25-A442A6EB1CC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Aseprite.Editor", "Unity.2D.Aseprite.Editor.csproj", "{D71615C9-D5FA-3A41-2402-C02469C4B7FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualScripting.Flow", "Unity.VisualScripting.Flow.csproj", "{47C0D3C0-EC25-D095-76CE-6466F513BB76}"
 EndProject
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.UI", "UnityEditor.UI.csproj", "{F01C9ADB-4650-715C-801C-889226855718}"
 EndProject
+=======
+>>>>>>> Stashed changes
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PlasticSCM.Editor", "Unity.PlasticSCM.Editor.csproj", "{59ED2405-4A3C-CAFE-5BBB-35CFDCBB6B0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Psdimporter.Editor", "Unity.2D.Psdimporter.Editor.csproj", "{DEFC2DB5-B299-EAC8-CA26-C0D0B7093BCA}"
@@ -43,8 +49,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsdPlugin", "PsdPlugin.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Burst", "Unity.Burst.csproj", "{7AE33BDB-E318-8890-9F0E-C87BC99ACBA7}"
 EndProject
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{EEC79041-4C59-8841-4815-BCAA872E423B}"
 EndProject
+=======
+>>>>>>> Stashed changes
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.SpriteShape.Editor", "Unity.2D.SpriteShape.Editor.csproj", "{E9712303-CF0C-B49A-2EFD-702FD5241185}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections", "Unity.Collections.csproj", "{1A064110-C1A2-C704-473D-149E5D7C89AF}"
@@ -81,8 +90,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Burst.Editor", "Unity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Common.Editor", "Unity.2D.Common.Editor.csproj", "{EE3D50AD-64B9-79F6-7580-B744403D9968}"
 EndProject
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Sprite.Editor", "Unity.2D.Sprite.Editor.csproj", "{FDDD0EF7-8E31-5AE6-DB56-C80DFFAF2CEB}"
 EndProject
+=======
+>>>>>>> Stashed changes
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{9FFBEB65-2314-A073-4198-2155E1AEE3EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.PixelPerfect", "Unity.2D.PixelPerfect.csproj", "{42C48536-F749-999F-0DA4-C9E7D859E506}"
@@ -103,6 +115,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections.DocCodeSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.CollabProxy.Editor", "Unity.CollabProxy.Editor.csproj", "{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}"
 EndProject
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Timeline.Player.csproj", "{7423E794-42E4-DF99-8235-A5F35B76F166}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualScripting.Flow", "Unity.VisualScripting.Flow.Player.csproj", "{2BA6EE34-59A2-0C2F-95A2-955558D4D7F3}"
@@ -139,6 +152,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.PixelPerfect", "Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Common.Runtime", "Unity.2D.Common.Runtime.Player.csproj", "{13681715-5099-06A5-E4D1-1F26367B3E37}"
 EndProject
+=======
+>>>>>>> Stashed changes
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,10 +168,13 @@ Global
 		{86F99532-48BD-A653-DB4E-32DD5C9A410E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86F99532-48BD-A653-DB4E-32DD5C9A410E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86F99532-48BD-A653-DB4E-32DD5C9A410E}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{8671ECDA-F2F7-37F1-E398-9D429D5B4661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8671ECDA-F2F7-37F1-E398-9D429D5B4661}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8671ECDA-F2F7-37F1-E398-9D429D5B4661}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8671ECDA-F2F7-37F1-E398-9D429D5B4661}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> Stashed changes
 		{588D9B21-0EA2-C8B8-BE25-A442A6EB1CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{588D9B21-0EA2-C8B8-BE25-A442A6EB1CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{588D9B21-0EA2-C8B8-BE25-A442A6EB1CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -169,10 +187,13 @@ Global
 		{47C0D3C0-EC25-D095-76CE-6466F513BB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C0D3C0-EC25-D095-76CE-6466F513BB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C0D3C0-EC25-D095-76CE-6466F513BB76}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{F01C9ADB-4650-715C-801C-889226855718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F01C9ADB-4650-715C-801C-889226855718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F01C9ADB-4650-715C-801C-889226855718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F01C9ADB-4650-715C-801C-889226855718}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> Stashed changes
 		{59ED2405-4A3C-CAFE-5BBB-35CFDCBB6B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{59ED2405-4A3C-CAFE-5BBB-35CFDCBB6B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59ED2405-4A3C-CAFE-5BBB-35CFDCBB6B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -229,10 +250,13 @@ Global
 		{7AE33BDB-E318-8890-9F0E-C87BC99ACBA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AE33BDB-E318-8890-9F0E-C87BC99ACBA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AE33BDB-E318-8890-9F0E-C87BC99ACBA7}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{EEC79041-4C59-8841-4815-BCAA872E423B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EEC79041-4C59-8841-4815-BCAA872E423B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEC79041-4C59-8841-4815-BCAA872E423B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEC79041-4C59-8841-4815-BCAA872E423B}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> Stashed changes
 		{E9712303-CF0C-B49A-2EFD-702FD5241185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9712303-CF0C-B49A-2EFD-702FD5241185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9712303-CF0C-B49A-2EFD-702FD5241185}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -305,10 +329,13 @@ Global
 		{EE3D50AD-64B9-79F6-7580-B744403D9968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE3D50AD-64B9-79F6-7580-B744403D9968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE3D50AD-64B9-79F6-7580-B744403D9968}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{FDDD0EF7-8E31-5AE6-DB56-C80DFFAF2CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FDDD0EF7-8E31-5AE6-DB56-C80DFFAF2CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDDD0EF7-8E31-5AE6-DB56-C80DFFAF2CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDDD0EF7-8E31-5AE6-DB56-C80DFFAF2CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> Stashed changes
 		{9FFBEB65-2314-A073-4198-2155E1AEE3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9FFBEB65-2314-A073-4198-2155E1AEE3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FFBEB65-2314-A073-4198-2155E1AEE3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -349,6 +376,7 @@ Global
 		{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{7423E794-42E4-DF99-8235-A5F35B76F166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7423E794-42E4-DF99-8235-A5F35B76F166}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7423E794-42E4-DF99-8235-A5F35B76F166}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -421,6 +449,8 @@ Global
 		{13681715-5099-06A5-E4D1-1F26367B3E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13681715-5099-06A5-E4D1-1F26367B3E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13681715-5099-06A5-E4D1-1F26367B3E37}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

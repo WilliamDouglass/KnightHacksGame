@@ -88,8 +88,14 @@ public class PlayerController : MonoBehaviour, IPlayerController
             HandleHorizontal();
             HandleVertical();
             ApplyMovement();
+        } 
+        else
+        {
+            if(_rb.velocity.sqrMagnitude < _stats.MaxSpeed * 4)
+            {
+                _rb.AddForce(_rb.velocity);
+            }
         }
-        
     }
 
     #region Collisions
@@ -191,7 +197,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     #region Vertical
     public void ResetVertical(float y)
     {
-        _frameVelocity.y = y;
+        _frameVelocity.y = 4 * y;
     }
     private void HandleVertical()
     {

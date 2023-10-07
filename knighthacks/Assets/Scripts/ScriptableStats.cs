@@ -17,14 +17,6 @@ public class ScriptableStats : ScriptableObject
     [Tooltip("Minimum input required before a left or right is recognized. Avoids drifting with sticky controllers"), Range(0.01f, 0.99f)]
     public float HorizontalDeadZoneThreshold = 0.1f;
 
-    [Header("GRAPPLING")]
-    [Tooltip("Top horizontal speed while grappled")]
-    public float MaxGrappleSpeed = 30;
-
-    [Tooltip("The player's capacity to gain horizontal speed while grappled")]
-    public float GrappleAcceleration = 240;
-
-
     [Header("MOVEMENT")]
     [Tooltip("The top horizontal movement speed")]
     public float MaxSpeed = 14;

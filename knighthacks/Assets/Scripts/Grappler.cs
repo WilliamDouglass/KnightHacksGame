@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Grappler : MonoBehaviour
 {
     [SerializeField] GameObject grapplePrefab = null;
-    [SerializeField] float projectileSpeed = 10;
     [SerializeField] float cooldown = 1;
+    [SerializeField] float seekRange = 10;
 
     GameObject grappleObj = null;
     bool canFire = true;
@@ -28,16 +29,23 @@ public class Grappler : MonoBehaviour
     }
     void Grapple()
     {
-        grappleObj = Instantiate(grapplePrefab, transform.position, GetFacingAngle(transform.position, MouseFollow.mousePos.position), transform);
-        grappleObj.GetComponent<Rigidbody2D>().velocity = grappleObj.transform.right * projectileSpeed;
-    }
-    public Quaternion GetFacingAngle(Vector2 origin, Vector2 target)
-    {
-        target.x -= origin.x;
-        target.y -= origin.y;
-
-        float angle = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
-        return Quaternion.Euler(new Vector3(0, 0, angle));
+        GameObject closest = null;
+        var targetsInRange = Physics2D.OverlapCircleAll(transform.position, seekRange);
+        float leastDistance = Mathf.Infinity;
+        foreach (var target in targetsInRange)
+        {
+            var squaredDist = (target.gameObject.transform.position - transform.position).sqrMagnitude;
+            //if (squaredDist < leastDistance && (targetLayers.value >> target.gameObject.layer) == 1) // Checks if potential target's layer is in the set layermask
+            if (squaredDist < leastDistance && target.CompareTag("Hookable"))
+            {
+                closest = target.gameObject;
+                leastDistance = squaredDist;
+            }
+        }
+        if(closest != null)
+        {
+            grappleObj = Instantiate(grapplePrefab, closest.transform.position, transform.rotation, transform);
+        }
     }
     IEnumerator Cooldown()
     {

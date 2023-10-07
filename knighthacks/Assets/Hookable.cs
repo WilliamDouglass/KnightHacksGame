@@ -11,10 +11,12 @@ public class Hookable : MonoBehaviour
     public void Start()
     {
         player = PlayerController.instance;
+        joint.connectedBody = player.GetComponent<Rigidbody2D>();
     }
     public void AttachPlayer()
     {
         joint.enabled = true;
+        joint.distance = Vector2.Distance(player.transform.position, joint.transform.position);
         player.UpdateAttach(true);
     }
     public void DetachPlayer()

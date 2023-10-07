@@ -43,8 +43,6 @@ public class CameraFollow : MonoBehaviour
         var x = player.transform.position.x;
         var y = player.transform.position.y;
 
-        Debug.Log($"X: {x} Y: {y}");
-
         // Ortho size (Distance from center to top) multiplied by resolution for dist from center to side of screen
         var cameraHalfX = cam.orthographicSize * ((float)Screen.width / Screen.height);
 

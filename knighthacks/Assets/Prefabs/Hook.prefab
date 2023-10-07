@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8537308358844676971
+--- !u!1 &5847316795936993760
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3650441690673374907}
-  - component: {fileID: 6296362013674680768}
-  - component: {fileID: 2828578409494016638}
-  - component: {fileID: 7735725339894916140}
-  - component: {fileID: 3029607581778770486}
-  - component: {fileID: 8443758339648833076}
+  - component: {fileID: 3984075333425699353}
+  - component: {fileID: 4673463885291516846}
+  - component: {fileID: 7277418891872937912}
+  - component: {fileID: 2330863770533467161}
+  - component: {fileID: 7401717457139709383}
+  - component: {fileID: 6269229447302564178}
   m_Layer: 0
   m_Name: Hook
   m_TagString: Hookable
@@ -21,29 +21,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3650441690673374907
+--- !u!4 &3984075333425699353
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8537308358844676971}
+  m_GameObject: {fileID: 5847316795936993760}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.98, y: 5.5, z: -0.0339066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.32, y: 4.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &6296362013674680768
+--- !u!50 &4673463885291516846
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8537308358844676971}
+  m_GameObject: {fileID: 5847316795936993760}
   m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,13 +63,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!232 &2828578409494016638
+--- !u!232 &7277418891872937912
 DistanceJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8537308358844676971}
+  m_GameObject: {fileID: 5847316795936993760}
   m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 0
@@ -83,26 +83,26 @@ DistanceJoint2D:
   m_AutoConfigureDistance: 1
   m_Distance: 8.643912
   m_MaxDistanceOnly: 1
---- !u!114 &7735725339894916140
+--- !u!114 &2330863770533467161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8537308358844676971}
+  m_GameObject: {fileID: 5847316795936993760}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e7535b944e04864ca57fe8cd012e9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joint: {fileID: 2828578409494016638}
---- !u!61 &3029607581778770486
+  joint: {fileID: 7277418891872937912}
+--- !u!61 &7401717457139709383
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8537308358844676971}
+  m_GameObject: {fileID: 5847316795936993760}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -139,15 +139,15 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!212 &8443758339648833076
+--- !u!212 &6269229447302564178
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8537308358844676971}
+  m_GameObject: {fileID: 5847316795936993760}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private Vector2 _frameVelocity;
     private int _fixedFrame;
     private bool _cachedQueryStartInColliders;
+    private bool _isAttached = false;
+
+    private float _swingVel;
+    private float _swingInitVel;
 
     #region Interface
 
@@ -41,6 +45,15 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void Update() => GatherInput();
 
+    public void UpdateAttach(bool isAttached)
+    {
+        _isAttached = isAttached;
+        if (!_isAttached)
+        {
+            _swingVel = _rb.velocity.x;
+            ResetVertical(_rb.velocity.y);
+        }
+    }
     private void GatherInput()
     {
         _frameInput = new FrameInput
@@ -70,9 +83,13 @@ public class PlayerController : MonoBehaviour, IPlayerController
         CheckCollisions();
 
         HandleJump();
-        HandleHorizontal();
-        HandleVertical();
-        ApplyMovement();
+        if (!_isAttached)
+        {
+            HandleHorizontal();
+            HandleVertical();
+            ApplyMovement();
+        }
+        
     }
 
     #region Collisions
@@ -105,6 +122,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
             _coyoteUsable = true;
             _bufferedJumpUsable = true;
             _endedJumpEarly = false;
+            _swingVel = 0;
             GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
         }
         // Left the Ground
@@ -156,7 +174,6 @@ public class PlayerController : MonoBehaviour, IPlayerController
     #endregion
 
     #region Horizontal
-
     private void HandleHorizontal()
     {
         if (_frameInput.Move.x == 0)
@@ -169,17 +186,24 @@ public class PlayerController : MonoBehaviour, IPlayerController
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
         }
     }
-
     #endregion
 
     #region Vertical
-
+    public void ResetVertical(float y)
+    {
+        _frameVelocity.y = y;
+    }
     private void HandleVertical()
     {
+        
         if (_grounded && _frameVelocity.y <= 0f)
         {
             _frameVelocity.y = _stats.GroundingForce;
         }
+        //else if(_isAttached)
+        //{
+        //    _frameVelocity.y = 0f;
+        //}
         else
         {
             var inAirGravity = _stats.FallAcceleration;
@@ -192,7 +216,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void ApplyMovement()
     {
-        _rb.velocity = _frameVelocity;
+        _rb.velocity = _frameVelocity + new Vector2(_swingVel, 0);
     }
 
 #if UNITY_EDITOR

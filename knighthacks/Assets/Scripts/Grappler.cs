@@ -30,11 +30,14 @@ public class Grappler : MonoBehaviour
     void Grapple()
     {
         GameObject closest = null;
+        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0;
+
         var targetsInRange = Physics2D.OverlapCircleAll(transform.position, seekRange);
         float leastDistance = Mathf.Infinity;
         foreach (var target in targetsInRange)
         {
-            var squaredDist = (target.gameObject.transform.position - transform.position).sqrMagnitude;
+            var squaredDist = (target.gameObject.transform.position - mousePos).sqrMagnitude;
             //if (squaredDist < leastDistance && (targetLayers.value >> target.gameObject.layer) == 1) // Checks if potential target's layer is in the set layermask
             if (squaredDist < leastDistance && target.CompareTag("Hookable"))
             {
@@ -46,6 +49,7 @@ public class Grappler : MonoBehaviour
         {
             grappleObj = Instantiate(grapplePrefab, closest.transform.position, transform.rotation, transform);
         }
+        
     }
     IEnumerator Cooldown()
     {

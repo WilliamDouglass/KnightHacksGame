@@ -14,12 +14,19 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public static PlayerController instance;
 
     [SerializeField] private ScriptableStats _stats;
+    [SerializeField] private AudioSource jumpSound;
+
+
     private Rigidbody2D _rb;
     private CapsuleCollider2D _col;
     private FrameInput _frameInput;
     private Vector2 _frameVelocity;
     private int _fixedFrame;
     private bool _cachedQueryStartInColliders;
+    private bool _isAttached = false;
+
+    private float _swingVel;
+    private float _swingInitVel;
 
     #region Interface
 
@@ -41,6 +48,15 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void Update() => GatherInput();
 
+    public void UpdateAttach(bool isAttached)
+    {
+        _isAttached = isAttached;
+        if (!_isAttached)
+        {
+            _swingVel = _rb.velocity.x;
+            ResetVertical(_rb.velocity.y);
+        }
+    }
     private void GatherInput()
     {
         _frameInput = new FrameInput
@@ -70,9 +86,22 @@ public class PlayerController : MonoBehaviour, IPlayerController
         CheckCollisions();
 
         HandleJump();
-        HandleHorizontal();
-        HandleVertical();
-        ApplyMovement();
+
+        if (!_isAttached)
+        {
+            Debug.Log($"{_isAttached}");
+
+            HandleHorizontal();
+            HandleVertical();
+            ApplyMovement();
+        } 
+        else
+        {
+            if(_rb.velocity.sqrMagnitude < _stats.MaxSpeed * 4)
+            {
+                _rb.AddForce(_rb.velocity);
+            }
+        }
     }
 
     #region Collisions
@@ -105,6 +134,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
             _coyoteUsable = true;
             _bufferedJumpUsable = true;
             _endedJumpEarly = false;
+            _swingVel = 0;
             GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
         }
         // Left the Ground
@@ -151,35 +181,43 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _coyoteUsable = false;
         _frameVelocity.y = _stats.JumpPower;
         Jumped?.Invoke();
+        jumpSound.Play();
     }
 
     #endregion
 
     #region Horizontal
-
     private void HandleHorizontal()
     {
         if (_frameInput.Move.x == 0)
         {
             var deceleration = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, deceleration * Time.fixedDeltaTime);
+
         }
         else
         {
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
         }
     }
-
     #endregion
 
     #region Vertical
-
+    public void ResetVertical(float y)
+    {
+        _frameVelocity.y = 4 * y;
+    }
     private void HandleVertical()
     {
+        
         if (_grounded && _frameVelocity.y <= 0f)
         {
             _frameVelocity.y = _stats.GroundingForce;
         }
+        //else if(_isAttached)
+        //{
+        //    _frameVelocity.y = 0f;
+        //}
         else
         {
             var inAirGravity = _stats.FallAcceleration;
@@ -192,7 +230,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void ApplyMovement()
     {
-        _rb.velocity = _frameVelocity;
+        _rb.velocity = _frameVelocity + new Vector2(_swingVel, 0);
     }
 
 #if UNITY_EDITOR

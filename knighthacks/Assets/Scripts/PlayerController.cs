@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public void UpdateAttach(bool isAttached)
     {
         _isAttached = isAttached;
+        Debug.Log($"Setting attached to {isAttached}");
         if (!_isAttached)
         {
             _swingVel = _rb.velocity.x;
@@ -86,8 +87,11 @@ public class PlayerController : MonoBehaviour, IPlayerController
         CheckCollisions();
 
         HandleJump();
+
         if (!_isAttached)
         {
+            Debug.Log($"{_isAttached}");
+
             HandleHorizontal();
             HandleVertical();
             ApplyMovement();
@@ -186,13 +190,16 @@ public class PlayerController : MonoBehaviour, IPlayerController
     #region Horizontal
     private void HandleHorizontal()
     {
+        Debug.Log($"Handling horizontal B");
         if (_frameInput.Move.x == 0)
         {
             var deceleration = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, deceleration * Time.fixedDeltaTime);
+
         }
         else
         {
+            Debug.Log($"Handling horizontal C");
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
         }
     }

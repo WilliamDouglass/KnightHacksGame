@@ -1,10 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-<<<<<<< Updated upstream
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{9FFBEB65-2314-A073-4198-2155E1AEE3EF}"
-EndProject
-=======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Timeline.csproj", "{E9C3E36E-91CC-3EB6-94C1-3ADF6006C4EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline.Editor", "Unity.Timeline.Editor.csproj", "{86F99532-48BD-A653-DB4E-32DD5C9A410E}"
@@ -99,15 +95,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections.DocCodeSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.CollabProxy.Editor", "Unity.CollabProxy.Editor.csproj", "{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}"
 EndProject
->>>>>>> Stashed changes
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< Updated upstream
-=======
 		{E9C3E36E-91CC-3EB6-94C1-3ADF6006C4EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9C3E36E-91CC-3EB6-94C1-3ADF6006C4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9C3E36E-91CC-3EB6-94C1-3ADF6006C4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -256,13 +249,10 @@ Global
 		{EE3D50AD-64B9-79F6-7580-B744403D9968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE3D50AD-64B9-79F6-7580-B744403D9968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE3D50AD-64B9-79F6-7580-B744403D9968}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> Stashed changes
 		{9FFBEB65-2314-A073-4198-2155E1AEE3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9FFBEB65-2314-A073-4198-2155E1AEE3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FFBEB65-2314-A073-4198-2155E1AEE3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FFBEB65-2314-A073-4198-2155E1AEE3EF}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< Updated upstream
-=======
 		{42C48536-F749-999F-0DA4-C9E7D859E506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42C48536-F749-999F-0DA4-C9E7D859E506}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42C48536-F749-999F-0DA4-C9E7D859E506}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -299,7 +289,6 @@ Global
 		{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DC0DFA2-F9D8-1282-783D-77B7F7E99063}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

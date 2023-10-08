@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public static PlayerController instance;
 
     [SerializeField] private ScriptableStats _stats;
+    [SerializeField] private AudioSource jumpSound;
+
+
     private Rigidbody2D _rb;
     private CapsuleCollider2D _col;
     private FrameInput _frameInput;
@@ -175,6 +178,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _coyoteUsable = false;
         _frameVelocity.y = _stats.JumpPower;
         Jumped?.Invoke();
+        jumpSound.Play();
     }
 
     #endregion

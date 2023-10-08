@@ -7,7 +7,11 @@ public class Grappler : MonoBehaviour
 {
     [SerializeField] GameObject grapplePrefab = null;
     [SerializeField] float cooldown = 1;
+<<<<<<< Updated upstream
     [SerializeField] float seekRange = 10;
+=======
+    [SerializeField] private AudioSource GrappleSound;
+>>>>>>> Stashed changes
 
     GameObject grappleObj = null;
     bool canFire = true;
@@ -17,6 +21,7 @@ public class Grappler : MonoBehaviour
         if (Input.GetAxisRaw("Grapple") == 1 && canFire && grappleObj == null)
         {
             Debug.Log("Firing.");
+            GrappleSound.Play();
             Grapple();
             StartCoroutine(Cooldown());
         } 

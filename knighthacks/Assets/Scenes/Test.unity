@@ -1256,6 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 0dadd3a76f4c8be409092295b9c710d6, type: 2}
+  jumpSound: {fileID: 0}
 --- !u!50 &1563046027
 Rigidbody2D:
   serializedVersion: 4
@@ -1333,6 +1334,8 @@ MonoBehaviour:
   grapplePrefab: {fileID: 1345831917887967107, guid: 92bee1a10891ec440abf8cb52b9ef67f, type: 3}
   cooldown: 0.25
   seekRange: 10
+  GrappleSound: {fileID: 0}
+  GrappleExit: {fileID: 0}
 --- !u!1 &1723361370
 GameObject:
   m_ObjectHideFlags: 0

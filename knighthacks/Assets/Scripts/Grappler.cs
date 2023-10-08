@@ -11,6 +11,7 @@ public class Grappler : MonoBehaviour
     [SerializeField] float seekRange = 10;
 
     [SerializeField] private AudioSource GrappleSound;
+    [SerializeField] private AudioSource GrappleExit;
 
 
     GameObject grappleObj = null;
@@ -28,6 +29,7 @@ public class Grappler : MonoBehaviour
         else if(Input.GetAxisRaw("Grapple") == 1 && canFire && grappleObj != null)
         {
             Debug.Log("Retracting.");
+            GrappleExit.Play();
             Destroy(grappleObj);
             StartCoroutine(Cooldown());
         }

@@ -1,2 +1,5 @@
 # Pumpkin's Time Hop!
-![PTH](https://github.com/WilliamDouglass/KnightHacksGame/assets/124937048/54420675-0b9b-4876-a966-45a9fe98b252)
+![PTH](https://github.com/WilliamDouglass/KnightHacksGame/assets/124937048/8af9ed96-9347-4fb3-9b5b-bca580a50009)
+
+# Pumpkin a time traveling orange fluffball on an adventure to discover the truth about his world.
+# This project created by Keenan Xiong, Donny Akers, William Douglass, and Benjamin Mingst was developed to tell the story of a forest fire in reverse. Showing how nature heals through time, Pumpkin begins his expedition in a charred post land. After wandering, Pumpkin discovers a star that guides him to a forest from the past clouded with smoke. Pumpkin quickly discovers this forest is ablaze and must swiftly escape the treacherous terrain. Finally, Pumpkin finds another star that guides him to a vibrant meadow with flourishing life and after enjoying the peaceful environment Pumpkin dives deeper into the past through another star. Pumpkin suddenly finds himself lofted into the sky and bouncing across clouds until Pumpkin suddenly descends back down to a familiar charred land finally discovering that he has traveled through a forest fire in reverse and learning how life can grow through complete devastation. 

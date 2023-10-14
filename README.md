@@ -1,6 +1,6 @@
 # Pumpkin's Time Hop!
 
-![alt text](https://github.com/[WilliamDouglass]/[KnightHacksGame]/blob/[main]images/Pumpkin Time Hop.png?raw=true)
+![Tile Image]([https://github.com/[WilliamDouglass]/[KnightHacksGame]/blob/[main]images/Pumpkin Time Hop.png?raw=true](https://github.com/WilliamDouglass/KnightHacksGame/blob/main/images/Pumpkin%20Time%20Hop.png?raw=true))
 
 [Devpost](https://devpost.com/software/pumpkin-s-time-hop)
 
